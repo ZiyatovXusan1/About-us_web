@@ -1,0 +1,46 @@
+@import "mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header_cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  font-family: 'Roboto';
+  margin-bottom: 90px !important;
+  .links {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 40px;
+    a {
+      text-decoration: none;
+      color: #525560;
+      font-size: 16px;
+      font-weight: 500;
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.2);
+        color: black;
+      }
+    }
+    button {
+        @include buttons (
+            12px 32px,
+            5px,
+            #1D2130,
+            white,
+            16px,
+            none,
+            500
+        );
+        &:hover {
+          background-color: crimson;
+        }
+    }
+  }
+}

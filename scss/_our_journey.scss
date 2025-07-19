@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.journey {
+    padding-top: 50px;
+    margin-bottom: 48px;
+}
+.section6 {
+    background-color: black;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 64px 0;
+    gap: 48px;
+    .left_side {
+        padding-left: 96px;
+        .achieves {
+            display: flex;
+            gap: 32px
+        }
+    }
+        .h1 {
+        @include texts (
+            48px,
+            white,
+            700,
+            120%
+        );
+        padding-bottom: 16px;
+        }
+        h1 {
+        @include texts (
+            24px,
+            white,
+            500,
+            120%
+        );
+    }
+    h2 {
+        @include texts (
+            20px,
+            white,
+            700,
+            150%
+        );
+        padding-bottom: 16px;
+    }
+    p{
+        @include texts (
+            12px,
+            white,
+            500,
+            160%
+        );
+        padding-bottom: 32px;
+    }
+}

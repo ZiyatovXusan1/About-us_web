@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.our_team {
+    padding-top: 48px;
+    .h1 {
+        @include texts (
+            56px,
+            #1D2130,
+            700,
+            120%
+        );
+        text-align: center;
+        padding-bottom: 16px
+    }
+    .p{
+        @include texts (
+            16px,
+            #525560,
+            400,
+            160%
+        );
+        text-align: center;
+        padding-bottom: 48px;
+    }
+}
+.grid_side {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 2;
+    .members {
+        padding-bottom: 40px;
+        text-align: center;
+        h2 {
+            @include texts (
+                20px,
+                #1D2130,
+                500,
+                160%
+            );
+            padding: 16px 0 8px 0;
+        }
+        p {
+            @include texts (
+                12px,
+                #1D2130,
+                500,
+                160%
+            );
+            padding-bottom: 16px;
+        }
+    }
+}

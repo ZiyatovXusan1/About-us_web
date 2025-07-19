@@ -1,0 +1,42 @@
+@import "header";
+@import "mixins";
+@import "main";
+@import "mission";
+@import "awards";
+@import "our_journey";
+@import "our_team";
+@import "bacground-image_side";
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Noto+Sans+Georgian:wght@100..900&family=Orbitron:wght@400..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&display=swap");
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+.min_container {
+    max-width: 1108px;
+    margin: auto;
+}
+.hnow_about_us {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    .chiziq {
+        width: 72px;
+        height: 2px;
+        color: #1D2130;
+        background-color: #1D2130
+    }
+    p{
+        @include texts (
+            16px,
+            #1D2130,
+            700,
+            100%
+        );
+        letter-spacing: 2px;
+        font-family: 'Roboto';
+    }
+}
+.video_img {
+    margin-top: 96px;
+    margin-bottom: 60px;
+}
